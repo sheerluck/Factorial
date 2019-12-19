@@ -2,36 +2,36 @@
 
 # 1) Python
 
-```
+```python
 from math import factorial as f
 f(70) - f(50)
 ```
 
 # 2) Haskell
 
-```
+```haskell
 let f n = product [1..n]
 (f 70) - (f 50)
 ```
 
 # 3) Julia
 
-```
+```julia
 factorial(big(70)) - factorial(big(50))
 ```
 
 # 4) Perl
 
-```
+```perl
 use feature 'say';
 use Math::BigInt;
 use Math::BigInt lib => 'GMP';
 say Math::BigInt->new('70')->bfac() - Math::BigInt->new('50')->bfac();
 ```
 
-# 5) Golang:
+# 5) Golang
 
-```
+```go
 package main
 
 import (
@@ -52,14 +52,14 @@ func main() {
 
 # 6) R
 
-```
+```r
 install.packages("gmp", dependencies = TRUE)
 gmp::factorialZ(70) - gmp::factorialZ(50)
 ```
 
 # 7) C++
 
-```
+```cpp
 #include <iostream>
 #include <mp++/mp++.hpp>
 
@@ -76,7 +76,7 @@ int main()
 
 # 8) Scala
 
-```
+```scala
 object Main extends App {
   def f(n: Int) = (BigInt(1) to BigInt(n)).product
   println(f(70) - f(50))
@@ -85,7 +85,7 @@ object Main extends App {
 
 # 9) C#
 
-```
+```csharp
 public static viod Main(string[] args) {
     Func<int, BigInteger> f = n => n < 2 ? BigInteger.One
               : Enumerable.Range(2, n-1)
@@ -97,7 +97,7 @@ public static viod Main(string[] args) {
 
 # 10) Prolog
 
-```
+```prolog
 n_factorial(0, 1).
 n_factorial(N, F) :-
    N #> 0,
@@ -113,7 +113,7 @@ n_diff(C) :-
 
 # 11) Rust
 
-```
+```rust
 use num::BigUint;
 use num::One;
 
