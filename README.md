@@ -126,6 +126,17 @@ fn main() {
 }
 ```
 
+# 12) Nim
 
+```nim
+import bigints
+
+func f(n: int): BigInt =
+  result = 1.init_big_int
+  for i in 2..n:
+    result = result * int32(i)
+
+echo f(70) - f(50)
+```
 
 
