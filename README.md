@@ -146,4 +146,15 @@ echo f(70) - f(50)
 (- (f 70) (f 50))
 ```
 
+# 14) Kotlin
+
+```kotlin
+import java.math.BigInteger
+fun Int.toBig() = BigInteger(this.toString())
+fun f(n: BigInteger): BigInteger {
+    if (n == BigInteger.ONE) return BigInteger.ONE
+    return n.multiply(f(n.minus(BigInteger.ONE)))
+}
+fun main() = println("f(70) - f(50) = ${f(70.toBig()) - f(50.toBig())}")
+```
 
