@@ -139,4 +139,11 @@ func f(n: int): BigInt =
 echo f(70) - f(50)
 ```
 
+# 13) Clojure
+
+```clojure
+(defn f [n] (reduce *' (range 1 (inc n))))
+(- (f 70) (f 50))
+```
+
 
