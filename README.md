@@ -158,3 +158,13 @@ fun f(n: BigInteger): BigInteger {
 fun main() = println("f(70) - f(50) = ${f(70.toBig()) - f(50.toBig())}")
 ```
 
+# 15) JavaScript
+
+```javascript
+function f(n) {
+    if (n == 1n) return 1n
+    return n * f(n - 1n)
+}
+f(70n) - f(50n)
+```
+
