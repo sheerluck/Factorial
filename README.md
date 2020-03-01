@@ -168,3 +168,12 @@ function f(n) {
 f(70n) - f(50n)
 ```
 
+# 16) Elixir
+
+```elixir
+defmodule F do
+  def f(0), do: 1
+  def f(n) when n > 0, do: Enum.reduce(1..n, 1, &*/2)
+end
+F.f(70) - F.f(50)
+```
