@@ -177,3 +177,13 @@ defmodule F do
 end
 F.f(70) - F.f(50)
 ```
+
+# 17) Coconut
+
+```python
+def f(0) = 1
+addpattern
+def f(n is int if n > 0) = range(1, n+1) |> reduce $ (*)
+f(70) - f(50)
+```
+
