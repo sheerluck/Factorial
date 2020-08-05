@@ -187,3 +187,12 @@ def f(n is int if n > 0) = range(1, n+1) |> reduce $ (*)
 f(70) - f(50)
 ```
 
+# 18) Crystal
+
+```python
+require "big"
+def f(n)
+  BigInt.new(n).factorial
+end
+print f("70") - f("50")
+```
