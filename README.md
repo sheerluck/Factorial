@@ -196,3 +196,10 @@ def f(n)
 end
 print f("70") - f("50")
 ```
+
+# 19) Guile
+
+```guile
+(define (f n) (if (zero? n) 1 (* n (f  (- n 1)))))
+(- (f 70) (f 50))
+```
