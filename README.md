@@ -203,3 +203,17 @@ print f("70") - f("50")
 (define (f n) (if (zero? n) 1 (* n (f  (- n 1)))))
 (- (f 70) (f 50))
 ```
+
+# 20) Swift
+
+```bash
+$ git clone https://github.com/attaswift/BigInt.git
+$ cd BigInt
+$ swift run --repl
+```
+
+```swift
+1> import BigInt
+2> func f(_ n: Int) -> BigInt { (1 ... n).map { BigInt($0) }.reduce(BigInt(1), *) } 
+3> print(f(70) - f(50))
+```
