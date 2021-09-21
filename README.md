@@ -217,3 +217,10 @@ $ swift run --repl
 2> func f(_ n: Int) -> BigInt { (1 ... n).map { BigInt($0) }.reduce(BigInt(1), *) } 
 3> print(f(70) - f(50))
 ```
+
+# 21) Racket
+
+```racket
+(require math/number-theory)
+(- (factorial 70) (factorial 50))
+```
