@@ -224,3 +224,9 @@ $ swift run --repl
 (require math/number-theory)
 (- (factorial 70) (factorial 50))
 ```
+
+# 22) Mathicscript
+
+```
+In[1]:= 70! - 50!
+```
